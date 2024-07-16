@@ -1,0 +1,9 @@
+<h1>New issue</h1>
+
+<%= render "form", task: @task, issue: @issue %>
+
+<br>
+
+<div>
+  <%= link_to "Back to issues", task_issues_path(@task) %>
+</div>

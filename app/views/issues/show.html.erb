@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @issue %>
+
+<div>
+  <%= link_to "Edit this issue", edit_task_issue_path(@task, @issue) %> |
+  <%= link_to "Back to issues", task_issues_path(@task) %>
+
+  <%= button_to "Destroy this issue", task_issues_path(@task, @issue), method: :delete %>
+</div>
